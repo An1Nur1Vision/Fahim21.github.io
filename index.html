@@ -3,133 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Research Profile</title>
+    <title>Your Name</title>
     <style>
         body {
-            font-family: 'Helvetica Neue', Arial, sans-serif;
+            font-family: Arial, sans-serif;
             line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #f8f8f8;
+            margin: 0 auto;
+            padding: 20px;
+            max-width: 800px;
+            background-color: #f0f0f0;
             color: #333;
         }
-        header {
-            background-color: #2c3e50;
-            color: white;
+        h1 {
             text-align: center;
-            padding: 2em 0;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2.5em;
-        }
-        nav {
-            background-color: #34495e;
-            padding: 1em 0;
-            text-align: center;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 1.5em;
-            font-weight: bold;
-        }
-        nav a:hover {
-            color: #3498db;
-        }
-        .container {
-            max-width: 900px;
-            margin: 2em auto;
-            padding: 0 20px;
-        }
-        section {
-            margin-bottom: 3em;
+            color: #333;
         }
         h2 {
-            color: #2c3e50;
-            border-bottom: 2px solid #3498db;
-            padding-bottom: 0.3em;
+            color: #333;
+            margin-top: 2em;
+        }
+        hr {
+            border: 0;
+            border-top: 1px solid #ccc;
+            margin: 2em 0;
+        }
+        p, ul {
+            margin: 1em 0;
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 2em;
+        }
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
         }
         img {
             max-width: 100%;
             height: auto;
             display: block;
             margin: 1em auto;
-            border: 1px solid #ddd;
-        }
-        ul {
-            list-style-type: disc;
-            margin-left: 2em;
-        }
-        .publication {
-            margin-bottom: 1.5em;
-        }
-        footer {
-            text-align: center;
-            padding: 1em;
-            background-color: #2c3e50;
-            color: white;
-            position: relative;
-            bottom: 0;
-            width: 100%;
+            border: 1px solid #ccc;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Your Name</h1>
-        <p>Researcher in Computer Vision and Generative AI</p>
-    </header>
-    <nav>
-        <a href="#about">About</a>
-        <a href="#research">Research</a>
-        <a href="#publications">Publications</a>
-        <a href="#contact">Contact</a>
-    </nav>
-    <div class="container">
-        <section id="about">
-            <h2>About Me</h2>
-            <p>
-                I am a [your position, e.g., PhD student] at [your institution, e.g., University of Example], working on computer vision and generative AI, with a focus on diffusion-based style transfer. My research explores efficient, zero-shot methods for image and video stylization, inspired by artistic workflows.
-            </p>
-        </section>
-        <section id="research">
-            <h2>Research</h2>
-            <p>
-                My work addresses challenges in diffusion-based style transfer, proposing a novel template-guided framework that enhances content preservation and style fidelity. Key contributions include:
-            </p>
-            <ul>
-                <li>A template-guided mechanism using a blended content-style latent to improve attention interactions for images and videos.</li>
-                <li>A zero-cost attention modulation strategy for user-controlled tuning of style intensity.</li>
-                <li>A patch-mixing technique for spatiotemporally coherent zero-shot video stylization.</li>
-            </ul>
-            <p>
-                Below is a qualitative comparison of our method against state-of-the-art approaches (see Figure below).
-            </p>
-            <img src="images/comp_template11.png" alt="Qualitative comparison of style transfer methods">
-        </section>
-        <section id="publications">
-            <h2>Publications</h2>
-            <div class="publication">
-                <p>
-                    <strong>Enabling Artist’s Template for Zero-shot Style Transfer with Diffusion Models</strong><br>
-                    [Your Name], [Co-authors, if any]<br>
-                    Under submission, 2025<br>
-                    <a href="papers/style_transfer_paper.pdf">PDF</a> | <a href="https://github.com/username/style-transfer">Code</a>
-                </p>
-            </div>
-        </section>
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>
-                Email: <a href="mailto:your.email@example.com">your.email@example.com</a><br>
-                GitHub: <a href="https://github.com/username">github.com/username</a><br>
-                Google Scholar: <a href="https://scholar.google.com/citations?user=your_id">Google Scholar</a>
-            </p>
-        </section>
-    </div>
-    <footer>
-        <p>&copy; 2025 Your Name. All rights reserved.</p>
-    </footer>
+    <h1>Your Name</h1>
+    <p style="text-align: center;">
+        [Your Position, e.g., PhD Student] at [Your Institution, e.g., University of Example]
+    </p>
+
+    <hr>
+
+    <h2>About</h2>
+    <p>
+        I am a researcher in computer vision and generative AI, with a focus on diffusion-based style transfer. My work explores efficient, zero-shot methods for image and video stylization, drawing inspiration from artistic workflows. I am currently [your position] at [your institution], advised by [advisor, if applicable].
+    </p>
+
+    <hr>
+
+    <h2>Publications</h2>
+    <ul>
+        <li>
+            <strong>Enabling Artist’s Template for Zero-shot Style Transfer with Diffusion Models</strong><br>
+            [Your Name], [Co-authors, if any]<br>
+            Under submission, 2025<br>
+            <a href="papers/style_transfer_paper.pdf">PDF</a> | <a href="https://github.com/username/style-transfer">Code</a>
+        </li>
+    </ul>
+    <p>
+        <strong>Abstract</strong>: Diffusion models excel in text-to-image generation and are advancing zero-shot visual tasks like style transfer. Traditional diffusion-based style transfer relies on self-attention swapping, which struggles to balance content preservation with style injection and prompt alignment. We propose an efficient framework to address these challenges: (1) a novel template-guided mechanism, using a blended content-style latent to enhance attention interactions for both images and videos with spatio-temporal coherence, and (2) a zero-cost attention modulation strategy that optimizes self- and cross-attention components. Our approach delivers superior stylization, ensuring robust content fidelity and style consistency in zero-shot settings. Evaluations demonstrate that our method surpasses state-of-the-art approaches across diverse benchmarks.
+    </p>
+    <p>
+        <strong>Qualitative Results</strong>: The figure below compares our method against state-of-the-art approaches for image and video stylization.
+    </p>
+    <img src="images/comp_template11.png" alt="Qualitative comparison of style transfer methods">
+
+    <hr>
+
+    <h2>Contact</h2>
+    <p>
+        <strong>Email</strong>: <a href="mailto:your.email@example.com">your.email@example.com</a><br>
+        <strong>GitHub</strong>: <a href="https://github.com/username">github.com/username</a><br>
+        <strong>Google Scholar</strong>: <a href="https://scholar.google.com/citations?user=your_id">Google Scholar Profile</a>
+    </p>
 </body>
 </html>
