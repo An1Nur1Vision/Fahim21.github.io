@@ -1,1 +1,135 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Research Profile</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 2em 0;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        nav {
+            background-color: #34495e;
+            padding: 1em 0;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1.5em;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #3498db;
+        }
+        .container {
+            max-width: 900px;
+            margin: 2em auto;
+            padding: 0 20px;
+        }
+        section {
+            margin-bottom: 3em;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 0.3em;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 1em auto;
+            border: 1px solid #ddd;
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 2em;
+        }
+        .publication {
+            margin-bottom: 1.5em;
+        }
+        footer {
+            text-align: center;
+            padding: 1em;
+            background-color: #2c3e50;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Your Name</h1>
+        <p>Researcher in Computer Vision and Generative AI</p>
+    </header>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                I am a [your position, e.g., PhD student] at [your institution, e.g., University of Example], working on computer vision and generative AI, with a focus on diffusion-based style transfer. My research explores efficient, zero-shot methods for image and video stylization, inspired by artistic workflows.
+            </p>
+        </section>
+        <section id="research">
+            <h2>Research</h2>
+            <p>
+                My work addresses challenges in diffusion-based style transfer, proposing a novel template-guided framework that enhances content preservation and style fidelity. Key contributions include:
+            </p>
+            <ul>
+                <li>A template-guided mechanism using a blended content-style latent to improve attention interactions for images and videos.</li>
+                <li>A zero-cost attention modulation strategy for user-controlled tuning of style intensity.</li>
+                <li>A patch-mixing technique for spatiotemporally coherent zero-shot video stylization.</li>
+            </ul>
+            <p>
+                Below is a qualitative comparison of our method against state-of-the-art approaches (see Figure below).
+            </p>
+            <img src="images/comp_template11.png" alt="Qualitative comparison of style transfer methods">
+        </section>
+        <section id="publications">
+            <h2>Publications</h2>
+            <div class="publication">
+                <p>
+                    <strong>Enabling Artist’s Template for Zero-shot Style Transfer with Diffusion Models</strong><br>
+                    [Your Name], [Co-authors, if any]<br>
+                    Under submission, 2025<br>
+                    <a href="papers/style_transfer_paper.pdf">PDF</a> | <a href="https://github.com/username/style-transfer">Code</a>
+                </p>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>
+                Email: <a href="mailto:your.email@example.com">your.email@example.com</a><br>
+                GitHub: <a href="https://github.com/username">github.com/username</a><br>
+                Google Scholar: <a href="https://scholar.google.com/citations?user=your_id">Google Scholar</a>
+            </p>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2025 Your Name. All rights reserved.</p>
+    </footer>
+</body>
+</html>
