@@ -55,12 +55,17 @@
             padding: 20px;
             margin-bottom: 2em;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+        section:hover {
+            transform: translateY(-5px);
         }
         h2 {
             color: #2c3e50;
             margin-top: 0;
             border-bottom: 2px solid #3498db;
             padding-bottom: 0.3em;
+            font-size: 1.5em;
         }
         img.profile {
             width: 150px;
@@ -68,19 +73,13 @@
             border-radius: 50%;
             display: block;
             margin: 0 auto 1em;
-            border: 2px solid #3498db;
-        }
-        img.result {
-            max-width: 100%;
-            height: auto;
-            display: block;
-            margin: 1em auto;
-            border: 1px solid #ccc;
-            border-radius: 4px;
+            border: 3px solid #3498db;
+            object-fit: cover;
         }
         ul {
             list-style-type: disc;
             margin-left: 2em;
+            margin-bottom: 1em;
         }
         a {
             color: #3498db;
@@ -107,7 +106,7 @@
             margin-top: 1em;
         }
         .social-icons a {
-            margin: 0 0.5em;
+            margin: 0 0.75em;
             font-size: 1.5em;
             color: #2c3e50;
         }
@@ -126,6 +125,12 @@
                 width: 120px;
                 height: 120px;
             }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.3em;
+            }
         }
     </style>
 </head>
@@ -134,6 +139,7 @@
         <a href="#about">About</a>
         <a href="#publications">Publications</a>
         <a href="#projects">Projects</a>
+        <a href="#honors">Honors</a>
         <a href="#contact">Contact</a>
     </nav>
     <div class="container">
@@ -149,19 +155,19 @@
         </section>
 
         <section id="publications">
-            <h2>Publications</h2>
+            <h2>Selected Publications</h2>
             <ul>
                 <li>
-                    <strong>Enabling Artist’s Template for Zero-shot Style Transfer with Diffusion Models</strong><br>
+                    <strong>No-MambAAD: Revitalizing Conv-Only Networks for Unsupervised Anomaly Detection</strong><br>
                     Masud An-Nur Islam Fahim, Jani Boutellier<br>
-                    Under submission, 2025<br>
-                    <a href="papers/style_transfer_paper.pdf" class="button">PDF</a>
-                    <a href="https://github.com/NurFahim21/style-transfer" class="button">Code</a>
-                    <p>
-                        <strong>Abstract</strong>: Diffusion models excel in text-to-image generation and are advancing zero-shot visual tasks like style transfer. Traditional diffusion-based style transfer relies on self-attention swapping, which struggles to balance content preservation with style injection and prompt alignment. We propose an efficient framework to address these challenges: (1) a novel template-guided mechanism, using a blended content-style latent to enhance attention interactions for both images and videos with spatio-temporal coherence, and (2) a zero-cost attention modulation strategy that optimizes self- and cross-attention components. Our approach delivers superior stylization, ensuring robust content fidelity and style consistency in zero-shot settings. Evaluations demonstrate that our method surpasses state-of-the-art approaches across diverse benchmarks.
-                    </p>
-                    <p><strong>Qualitative Results</strong>: The figure below compares our method against state-of-the-art approaches.</p>
-                    <img src="images/comp_template11.png" alt="Qualitative comparison" class="result">
+                    CVPRw 2025 (Spotlight)<br>
+                    <a href="https://arxiv.org/abs/XXXX.XXXXX" class="button">Paper</a>
+                </li>
+                <li>
+                    <strong>FARI: Collaborative Frame Attention ReImagined for Zero-Shot Video Editing</strong><br>
+                    Masud An-Nur Islam Fahim, Jani Boutellier<br>
+                    [Project Page]<br>
+                    <a href="https://example.com/fari-project" class="button">Project</a>
                 </li>
                 <li>
                     <strong>Improved Zero-Shot Image Editing via Null-Toon and Directed Delta Denoising Score</strong><br>
@@ -182,7 +188,7 @@
                     <a href="https://arxiv.org/abs/XXXX.XXXXX" class="button">Paper</a>
                 </li>
             </ul>
-            <p><em>For a full list of publications, see my <a href="https://scholar.google.com/citations?user=your_id">Google Scholar</a> or <a href="papers/cv.pdf" class="button">CV</a>.</em></p>
+            <p><em>For a full list of publications, see my <a href="https://scholar.google.com/citations?hl=en&user=m65gxHUAAAAJ">Google Scholar</a> or <a href="papers/cv.pdf" class="button">CV</a>.</em></p>
         </section>
 
         <section id="projects">
@@ -197,9 +203,27 @@
                     Designed a custom augmentation network using backpropagation to generate new augmentations on the fly, with KL divergence for distillation to improve model generalization.
                 </li>
                 <li>
+                    <strong>Investigation of Learning Dynamics for Generalization</strong><br>
+                    Ongoing project exploring training dynamics, Lipschitz property, loss landscape, and first-order statistical properties to explain generalization in modern deep networks.
+                </li>
+                <li>
                     <strong>LiveDet 2021 Fingerprint Liveness Detection</strong><br>
                     Achieved 5th place in the LiveDet 2021 competition by developing a solution for detecting fingerprint liveness across various scanner sources.
                 </li>
+                <li>
+                    <strong>FRVT Face Recognition 2021</strong><br>
+                    Contributed to the FRVT C++ submission package, refining feature vectors with dimensionality reduction to achieve FNMR ten times better than the baseline.
+                </li>
+            </ul>
+        </section>
+
+        <section id="honors">
+            <h2>Honors & Grants</h2>
+            <ul>
+                <li>National Research Grant for Residential Area Temperature Monitoring System, 2017</li>
+                <li>National Undergraduate Project Show, 1st Place (Top 0.1%), 2016</li>
+                <li>6th Place, Huawei Seeds for the Future, 2016</li>
+                <li>Runners-Up, Robi-Axiata Case Competition, 2014</li>
             </ul>
         </section>
 
@@ -208,7 +232,7 @@
             <p>
                 <strong>Email</strong>: <a href="mailto:mostofa21fahim@gmail.com">mostofa21fahim@gmail.com</a><br>
                 <strong>GitHub</strong>: <a href="https://github.com/NurFahim21">github.com/NurFahim21</a><br>
-                <strong>Google Scholar</strong>: <a href="https://scholar.google.com/citations?user=your_id">Google Scholar Profile</a><br>
+                <strong>Google Scholar</strong>: <a href="https://scholar.google.com/citations?hl=en&user=m65gxHUAAAAJ">Google Scholar Profile</a><br>
                 <strong>CV</strong>: <a href="papers/cv.pdf" class="button">Download CV</a>
             </p>
             <div class="social-icons">
