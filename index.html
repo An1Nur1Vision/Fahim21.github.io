@@ -3,92 +3,219 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name</title>
+    <title>Masud An-Nur Islam Fahim - Research Profile</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Roboto', Arial, sans-serif;
             line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+            color: #333;
+        }
+        .container {
+            max-width: 900px;
             margin: 0 auto;
             padding: 20px;
-            max-width: 800px;
-            background-color: #f0f0f0;
-            color: #333;
         }
         h1 {
             text-align: center;
-            color: #333;
+            color: #2c3e50;
+            margin-bottom: 0.5em;
+        }
+        .subtitle {
+            text-align: center;
+            color: #555;
+            margin-bottom: 2em;
+            font-size: 1.2em;
+        }
+        nav {
+            background-color: #2c3e50;
+            padding: 1em;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1.5em;
+            font-weight: 400;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #3498db;
+        }
+        section {
+            background: #f9f9f9;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 2em;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
         h2 {
-            color: #333;
-            margin-top: 2em;
+            color: #2c3e50;
+            margin-top: 0;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 0.3em;
         }
-        hr {
-            border: 0;
-            border-top: 1px solid #ccc;
-            margin: 2em 0;
+        img.profile {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            display: block;
+            margin: 0 auto 1em;
+            border: 2px solid #3498db;
         }
-        p, ul {
-            margin: 1em 0;
+        img.result {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 1em auto;
+            border: 1px solid #ccc;
+            border-radius: 4px;
         }
         ul {
             list-style-type: disc;
             margin-left: 2em;
         }
         a {
-            color: #0066cc;
+            color: #3498db;
             text-decoration: none;
         }
         a:hover {
             text-decoration: underline;
         }
-        img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-            margin: 1em auto;
-            border: 1px solid #ccc;
+        .button {
+            display: inline-block;
+            padding: 0.5em 1em;
+            background-color: #3498db;
+            color: white;
+            border-radius: 4px;
+            margin: 0.5em 0.5em 0.5em 0;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #2980b9;
+            text-decoration: none;
+        }
+        .social-icons {
+            text-align: center;
+            margin-top: 1em;
+        }
+        .social-icons a {
+            margin: 0 0.5em;
+            font-size: 1.5em;
+            color: #2c3e50;
+        }
+        .social-icons a:hover {
+            color: #3498db;
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 10px;
+            }
+            nav a {
+                margin: 0 0.5em;
+                font-size: 0.9em;
+            }
+            img.profile {
+                width: 120px;
+                height: 120px;
+            }
         }
     </style>
 </head>
 <body>
-    <h1>Your Name</h1>
-    <p style="text-align: center;">
-        [Your Position, e.g., PhD Student] at [Your Institution, e.g., University of Example]
-    </p>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#publications">Publications</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="container">
+        <h1>Masud An-Nur Islam Fahim</h1>
+        <p class="subtitle">PhD Student at University of Vaasa, Finland</p>
+        <img src="images/profile.jpg" alt="Profile Photo" class="profile">
 
-    <hr>
+        <section id="about">
+            <h2>About</h2>
+            <p>
+                I am a PhD student at the University of Vaasa, Finland, specializing in computer vision and generative AI. My research interests include machine learning theory, self-supervised learning, generative modeling, explainable AI, neural dynamics, and low-level vision problems. I hold an MS in Computer Engineering from Chosun University, South Korea (2021), and a BSc in Electronics and Communication Engineering from Khulna University of Engineering and Technology, Bangladesh (2017). Currently, I am working on self-supervised action classification and text-to-image editing with diffusion models, advised by Dr. Jani Boutellier.
+            </p>
+        </section>
 
-    <h2>About</h2>
-    <p>
-        I am a researcher in computer vision and generative AI, with a focus on diffusion-based style transfer. My work explores efficient, zero-shot methods for image and video stylization, drawing inspiration from artistic workflows. I am currently [your position] at [your institution], advised by [advisor, if applicable].
-    </p>
+        <section id="publications">
+            <h2>Publications</h2>
+            <ul>
+                <li>
+                    <strong>Enabling Artist’s Template for Zero-shot Style Transfer with Diffusion Models</strong><br>
+                    Masud An-Nur Islam Fahim, Jani Boutellier<br>
+                    Under submission, 2025<br>
+                    <a href="papers/style_transfer_paper.pdf" class="button">PDF</a>
+                    <a href="https://github.com/NurFahim21/style-transfer" class="button">Code</a>
+                    <p>
+                        <strong>Abstract</strong>: Diffusion models excel in text-to-image generation and are advancing zero-shot visual tasks like style transfer. Traditional diffusion-based style transfer relies on self-attention swapping, which struggles to balance content preservation with style injection and prompt alignment. We propose an efficient framework to address these challenges: (1) a novel template-guided mechanism, using a blended content-style latent to enhance attention interactions for both images and videos with spatio-temporal coherence, and (2) a zero-cost attention modulation strategy that optimizes self- and cross-attention components. Our approach delivers superior stylization, ensuring robust content fidelity and style consistency in zero-shot settings. Evaluations demonstrate that our method surpasses state-of-the-art approaches across diverse benchmarks.
+                    </p>
+                    <p><strong>Qualitative Results</strong>: The figure below compares our method against state-of-the-art approaches.</p>
+                    <img src="images/comp_template11.png" alt="Qualitative comparison" class="result">
+                </li>
+                <li>
+                    <strong>Improved Zero-Shot Image Editing via Null-Toon and Directed Delta Denoising Score</strong><br>
+                    Masud An-Nur Islam Fahim, Jani Boutellier<br>
+                    ICPR 2024<br>
+                    <a href="https://arxiv.org/abs/XXXX.XXXXX" class="button">Paper</a>
+                </li>
+                <li>
+                    <strong>ST2ST: Self-Supervised Test-time Adaptation for Video Action Recognition</strong><br>
+                    Masud An-Nur Islam Fahim, Mohammed Innat, Jani Boutellier<br>
+                    CVPRw 2024<br>
+                    <a href="https://arxiv.org/abs/XXXX.XXXXX" class="button">Paper</a>
+                </li>
+                <li>
+                    <strong>CheckMATE: Efficient Video Summarization by Checking Mutually Averaged Temporal Encapsulation</strong><br>
+                    Masud An-Nur Islam Fahim, Jani Boutellier<br>
+                    CVPRw 2024<br>
+                    <a href="https://arxiv.org/abs/XXXX.XXXXX" class="button">Paper</a>
+                </li>
+            </ul>
+            <p><em>For a full list of publications, see my <a href="https://scholar.google.com/citations?user=your_id">Google Scholar</a> or <a href="papers/cv.pdf" class="button">CV</a>.</em></p>
+        </section>
 
-    <hr>
+        <section id="projects">
+            <h2>Technical Projects</h2>
+            <ul>
+                <li>
+                    <strong>Pose Estimation Dataset Development</strong><br>
+                    Developed a novel algorithm for view extractions from point clouds, refined with a custom gap-filling algorithm to aid pose estimation, as part of a dataset project at University of Vaasa and Tampere University.
+                </li>
+                <li>
+                    <strong>Novel Data Augmentation via Back-Propagation</strong><br>
+                    Designed a custom augmentation network using backpropagation to generate new augmentations on the fly, with KL divergence for distillation to improve model generalization.
+                </li>
+                <li>
+                    <strong>LiveDet 2021 Fingerprint Liveness Detection</strong><br>
+                    Achieved 5th place in the LiveDet 2021 competition by developing a solution for detecting fingerprint liveness across various scanner sources.
+                </li>
+            </ul>
+        </section>
 
-    <h2>Publications</h2>
-    <ul>
-        <li>
-            <strong>Enabling Artist’s Template for Zero-shot Style Transfer with Diffusion Models</strong><br>
-            [Your Name], [Co-authors, if any]<br>
-            Under submission, 2025<br>
-            <a href="papers/style_transfer_paper.pdf">PDF</a> | <a href="https://github.com/username/style-transfer">Code</a>
-        </li>
-    </ul>
-    <p>
-        <strong>Abstract</strong>: Diffusion models excel in text-to-image generation and are advancing zero-shot visual tasks like style transfer. Traditional diffusion-based style transfer relies on self-attention swapping, which struggles to balance content preservation with style injection and prompt alignment. We propose an efficient framework to address these challenges: (1) a novel template-guided mechanism, using a blended content-style latent to enhance attention interactions for both images and videos with spatio-temporal coherence, and (2) a zero-cost attention modulation strategy that optimizes self- and cross-attention components. Our approach delivers superior stylization, ensuring robust content fidelity and style consistency in zero-shot settings. Evaluations demonstrate that our method surpasses state-of-the-art approaches across diverse benchmarks.
-    </p>
-    <p>
-        <strong>Qualitative Results</strong>: The figure below compares our method against state-of-the-art approaches for image and video stylization.
-    </p>
-    <img src="images/comp_template11.png" alt="Qualitative comparison of style transfer methods">
-
-    <hr>
-
-    <h2>Contact</h2>
-    <p>
-        <strong>Email</strong>: <a href="mailto:your.email@example.com">your.email@example.com</a><br>
-        <strong>GitHub</strong>: <a href="https://github.com/username">github.com/username</a><br>
-        <strong>Google Scholar</strong>: <a href="https://scholar.google.com/citations?user=your_id">Google Scholar Profile</a>
-    </p>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>
+                <strong>Email</strong>: <a href="mailto:mostofa21fahim@gmail.com">mostofa21fahim@gmail.com</a><br>
+                <strong>GitHub</strong>: <a href="https://github.com/NurFahim21">github.com/NurFahim21</a><br>
+                <strong>Google Scholar</strong>: <a href="https://scholar.google.com/citations?user=your_id">Google Scholar Profile</a><br>
+                <strong>CV</strong>: <a href="papers/cv.pdf" class="button">Download CV</a>
+            </p>
+            <div class="social-icons">
+                <a href="https://github.com/NurFahim21" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/your-linkedin" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </section>
+    </div>
 </body>
 </html>
